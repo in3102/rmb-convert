@@ -1,0 +1,29 @@
+{
+  "version": "1.0.1",
+  "pluginName": "人民币大写转换",
+  "description": "人民币大写转换、千分位",
+  "author": "uTools官方",
+  "homepage": "https://u.tools",
+  "preload": "preload.js",
+  "logo": "logo.png",
+  "features": [
+    {
+      "code": "rmb",
+      "explain": "人民币大写转换",
+      "cmds": [
+        "人民币大写转换"
+      ]
+    },
+    {      
+      "code": "converter",
+      "explain": "人民币大写转换",
+      "cmds": [
+        {
+          "type": "regex",
+          "match": "/^\\s*(\\d{1,15}(?:\\.\\d{1,2})?|\\d{1,3}(?:,\\d{3}){1,4}|[零壹贰叁肆伍陆柒捌玖拾佰仟万亿]+(元整?(?:[零壹贰叁肆伍陆柒捌玖]角(?:[零壹贰叁肆伍陆柒捌玖]分)?)?)?)\\s*$/",
+          "label": "人民币大写转换"
+        }
+      ]
+    }
+  ]
+}
